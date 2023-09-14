@@ -50,7 +50,7 @@
                 xlink:href="#gentle-wave"
                 x="48"
                 y="0"
-                fill="rgba(255,255,255,0.7"
+                fill="rgba(255,255,255,0.7)"
               />
               <use
                 xlink:href="#gentle-wave"
@@ -77,7 +77,7 @@
           <div>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Imac_alu.png"
-              alt=""
+              alt="Image d'un iMac"
               class="w-100"
             />
           </div>
@@ -92,9 +92,9 @@
                   <br /><br />
                   <a href="#" id="openMod">Ouvrir la modal</a>
                 </p>
-                <div id="modalWindow">
-                  <div class="modal">
-                    <button>X</button>
+                <div id="modalWindow" role="dialog" >
+                  <div class="modal" aria-modal="true">
+                    <button id="closeModal" aria-label="Ferme la modal">X</button>
                     <h2>Quelques liens utiles</h2>
                     <ul>
                       <li>
@@ -132,9 +132,9 @@
           <img
             src="./images/danny-howe-W9vc6T0NLps-unsplash.jpg"
             id="image2"
-            alt=""
+            alt="Image d'un concert"
           />
-          <button id="useDsicl">
+          <button id="useDsicl" aria-label="Utilise la disclosure ">
             Trouver d'autres informations incroyables
           </button>
           <div id="disclosureWindow">
